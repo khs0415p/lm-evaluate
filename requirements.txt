@@ -1,0 +1,8 @@
+accelerate==0.28.0
+datasets==2.18.0
+huggingface-hub==0.21.4
+sentencepiece==0.2.0
+torch==2.0.1
+torchaudio==2.0.2
+torchvision==0.15.2
+transformers==4.38.2
