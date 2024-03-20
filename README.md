@@ -1,6 +1,14 @@
-# Measuring Massive Multitask Language Understanding
+# Evalutation of Large Language Model
+
+## Data
+
+**Measuring Massive Multitask Language Understanding**
 
 - 57가지 영역에서 전반적인 LLM 성능을 측정할 수 있는 데이터셋
+
+**wikitext**
+
+- ppl 측정을 위한 데이터셋
 
 ## Prompt
 
