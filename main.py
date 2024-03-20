@@ -64,8 +64,8 @@ def main(config):
         print(f"{k:<40}{group_acc:<5.3f}")
     print("==================================================")
     print("--------------------------------------------------")
-    print(f"{'Perplexity':<40}{'Score':<5}")
     ppl_score = evaluator.get_ppl_score()
+    print(f"{'Perplexity':<40}{'Score':<5}")
     print(f"{ppl_score:>45.3f}")
     print("==================================================")
 
