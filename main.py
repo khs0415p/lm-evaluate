@@ -5,6 +5,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
+from utils import make_data
 from collections import defaultdict
 from config import Config
 from evaluate import Evaluator
@@ -13,6 +14,12 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 
 def main(config):
+    if not os.path.exists('data/'):
+        print("Loading data...")
+        os.makedirs(config.dev_dir, exist_ok=True)
+        os.makedirs(config.test_dir, exist_ok=True)
+        make_data()
+
     sub_categories = config.sub_categories
     categories = config.categories
     # load model & tokenizer
